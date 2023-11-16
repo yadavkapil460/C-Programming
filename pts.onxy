@@ -1,0 +1,31 @@
+//lies on x axis , y axis or origin
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("Enter x : ");
+    scanf("%d",&x);
+    printf("Enter y : ");
+    scanf("%d",&y);
+    if( x==0 && y==0 ){
+        printf("Given pts lie on the origin");
+    }
+     else if( x < 0 && y<0){
+        printf("The pts lie in 3rd Quadrant");
+    }
+        else if( x<0 && y>0){
+            printf("Given pts lie in 2nd Quadrant");
+    }
+    else if( x>0 &&  y>0 ){
+        printf("Given pts lie on 1st Quadrant");
+    }
+    else if( x>0 &&  y<0 ){
+        printf("Given pts lie on 4th Quadrant");
+    }
+    else if(  x==0 && y!=0){
+        printf("given pts lie on y axis");
+    }
+     else if(  y==0 && x!=0){
+        printf("given pts lie on x axis");
+    }
+    return 0;
+}
