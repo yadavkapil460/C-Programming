@@ -1,0 +1,9 @@
+//ap 100,97,94...upto all +ve terms
+#include<stdio.h>
+int main(){
+    int a = 100;
+    for(int a=100 ; a>=0 ; a=a-3){
+         printf(" %d ",a);
+    }
+    return 0;
+}
