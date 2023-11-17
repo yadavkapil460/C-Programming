@@ -1,0 +1,19 @@
+//sum of 9+99+999+....
+#include <stdio.h>
+
+int main() {
+    int terms, i;
+    unsigned long long int sum = 0, term = 0, number = 9;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &terms);
+
+    for (i = 1; i <= terms; i++) {
+        term = term * 10 + number;
+        sum += term;
+    }
+
+    printf("Sum of the series: %llu\n", sum);
+
+    return 0;
+}
