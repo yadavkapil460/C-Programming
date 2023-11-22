@@ -1,0 +1,14 @@
+#include <stdio.h>
+void function(int*n){
+*n = 10;
+return;
+}
+int main()
+{
+    int x = 5;
+    printf("number before passing : %d\n",x);
+    function(&x);
+    printf("number after passing : %d",x);
+
+    return 0;
+}
